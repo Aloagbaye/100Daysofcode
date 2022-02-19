@@ -4,7 +4,6 @@ Created on Thu Feb 17 22:49:17 2022
 
 @author: alomo
 """
-
 import numpy as np
 import pandas as pd
 
@@ -24,3 +23,14 @@ model.fit(X_train,y_train)
 y_pred = model.predict(X_test)
 print(metrics.accuracy_score(y_test,y_pred))
 model.predict(np.array([[2.5,1.2,3.4,4.8]]))
+
+
+import pickle
+pickle.dump(model, open("iris_v1.pkl","wb"))
+model_pk = pickle.load(open("iris_v1.pkl","rb"))
+model_pk.predict(np.array([[2.5,1.2,3.4,4.8]]))
+
+import joblib
+joblib.dump(model, open("iris_v1.jl","wb"))
+model_jl = joblib.load(open("iris_v1.jl","rb"))
+model_jl.predict(np.array([[2.5,1.2,3.4,4.8]]))
