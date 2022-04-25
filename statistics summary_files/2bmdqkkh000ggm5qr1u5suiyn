@@ -1,0 +1,159 @@
+define("msg-mentions/components/-dynamic-element-alt",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+var t=Ember.Component.extend()
+e.default=t}))
+define("msg-mentions/components/-dynamic-element",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+var t=Ember.Component.extend()
+e.default=t}))
+define.alias("artdeco-button/components/artdeco-button","msg-mentions/components/artdeco-button")
+define.alias("artdeco-card/components/artdeco-card-image","msg-mentions/components/artdeco-card-image")
+define.alias("artdeco-card/components/artdeco-card","msg-mentions/components/artdeco-card")
+define.alias("artdeco-modal/components/artdeco-confirmation-dialog","msg-mentions/components/artdeco-confirmation-dialog")
+define.alias("artdeco-loader/components/artdeco-loader","msg-mentions/components/artdeco-loader")
+define.alias("artdeco-modal/components/container","msg-mentions/components/artdeco-modal-container")
+define.alias("artdeco-modal/components/artdeco-modal-content","msg-mentions/components/artdeco-modal-content")
+define.alias("artdeco-modal/components/artdeco-modal-footer","msg-mentions/components/artdeco-modal-footer")
+define.alias("artdeco-modal/components/artdeco-modal-header","msg-mentions/components/artdeco-modal-header")
+define.alias("artdeco-modal/components/artdeco-modal","msg-mentions/components/artdeco-modal")
+define.alias("ember-wormhole/components/ember-wormhole","msg-mentions/components/ember-wormhole")
+define.alias("artdeco-icons-web/components/linkedin-logo","msg-mentions/components/linkedin-logo")
+define("msg-mentions/components/mention-all-picker-option-presenter",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+const t=Ember.HTMLBars.template({id:"6+xGqsZA",block:'{"symbols":["@onClick","@onKeyDown"],"statements":[[11,"li"],[24,"role","option"],[24,"tabindex","0"],[24,0,"msg-form__mention-option"],[4,[38,0],["click",[32,1]],null],[4,[38,0],["keydown",[32,2]],null],[12],[2,"\\n"],[2,"  "],[10,"span"],[14,0,"EntityPhoto-circle-2 ghost-group"],[12],[2,"\\n  "],[13],[2,"\\n  "],[10,"div"],[14,0,"display-flex flex-column pl2 truncate"],[12],[2,"\\n    "],[10,"span"],[14,0,"t-14 t-black t-bold truncate"],[12],[2,"\\n      "],[1,[30,[36,1],["i18n_mention_all","msg-mentions/components/mention-all-picker-option-presenter"],null]],[2,"\\n    "],[13],[2,"\\n    "],[10,"span"],[14,0,"t-12 t-black--light t-normal truncate"],[12],[2,"\\n      "],[1,[30,[36,1],["i18n_notify_entire_group","msg-mentions/components/mention-all-picker-option-presenter"],null]],[2,"\\n    "],[13],[2,"\\n  "],[13],[2,"\\n"],[13]],"hasEval":false,"upvars":["on","t"]}',moduleName:"msg-mentions/components/mention-all-picker-option-presenter.hbs"})
+var n=Ember._setComponentTemplate(t,Ember._templateOnlyComponent())
+e.default=n}))
+define("msg-mentions/components/mention-all-picker-option",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+const t=Ember.HTMLBars.template({id:"+9rF8akG",block:'{"symbols":["@onClick","@onKeyDown"],"statements":[[11,"li"],[24,"role","option"],[24,"tabindex","0"],[24,0,"msg-form__mention-option"],[24,"data-mentions-picker-option",""],[4,[38,0],["click",[32,1]],null],[4,[38,0],["keydown",[32,2]],null],[12],[2,"\\n  "],[10,"span"],[14,0,"EntityPhoto-circle-2 ghost-group"],[12],[2,"\\n  "],[13],[2,"\\n  "],[10,"div"],[14,0,"display-flex flex-column pl2 truncate"],[12],[2,"\\n    "],[10,"span"],[14,0,"t-14 t-black t-bold truncate"],[12],[2,"\\n      "],[1,[30,[36,1],["i18n_mention_all","msg-mentions/components/mention-all-picker-option"],null]],[2,"\\n    "],[13],[2,"\\n    "],[10,"span"],[14,0,"t-12 t-black--light t-normal truncate"],[12],[2,"\\n      "],[1,[30,[36,1],["i18n_notify_entire_group","msg-mentions/components/mention-all-picker-option"],null]],[2,"\\n    "],[13],[2,"\\n  "],[13],[2,"\\n"],[13]],"hasEval":false,"upvars":["on","t"]}',moduleName:"msg-mentions/components/mention-all-picker-option.hbs"})
+var n=Ember._setComponentTemplate(t,Ember._templateOnlyComponent())
+e.default=n}))
+define("msg-mentions/components/mention-to-invite-toast",["exports","@babel/runtime/helpers/esm/initializerDefineProperty","@babel/runtime/helpers/esm/defineProperty","@babel/runtime/helpers/esm/applyDecoratedDescriptor","@babel/runtime/helpers/esm/initializerWarningHelper","@glimmer/component","global-helpers/helpers/name","msg-shared/utils/constants","msg-shared/utils/custom-tracking","global-utils/utils/is-browser","msg-shared/utils/get-participant-presence-statuses"],(function(e,t,n,o,i,s,a,r,l,m,c){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+var d,p,u,f,g,b,h,_,v,y,k,M,w,T,E,P,x
+const C=Ember.HTMLBars.template({id:"uZahcnCh",block:'{"symbols":["@membersToInvite"],"statements":[[2,"\\n"],[6,[37,5],[[32,1]],null,[["default"],[{"statements":[[2,"  "],[8,"artdeco-card@artdeco-card",[[16,1,[32,0,["mentionToInviteToastId"]]],[4,[38,2],[[32,0,["onInsert"]]],null]],[["@isDismissable","@onDismiss","@classNames","@dismissText","@tabindex"],[true,[32,0,["closeToast"]],"msg-form__mention-to-invite-toast-card",[30,[36,1],["a11y_dismiss_mention-to-invite-toast","msg-mentions/components/mention-to-invite-toast"],null],"0"]],[["default"],[{"statements":[[2,"\\n    "],[1,[30,[36,3],null,[["type","class"],["notify-pebble-icon","msg-form__mention-to-invite-toast-icon mr2"]]]],[2,"\\n    "],[10,"div"],[14,0,"mr4 t-14"],[12],[2,"\\n      "],[10,"span"],[14,"tabindex","0"],[14,0,"msg-form__mention-to-invite-toast-card__text mr1"],[12],[2,"\\n"],[6,[37,5],[[30,[36,4],[2,[32,1,["length"]]],null]],null,[["default","else"],[{"statements":[[2,"          "],[1,[30,[36,1],["i18n_up_to_2_participants_not_in_group_conversation","msg-mentions/components/mention-to-invite-toast"],[["names","count"],[[32,0,["membersToInviteNames"]],[32,1,["length"]]]]]],[2,"\\n"]],"parameters":[]},{"statements":[[2,"          "],[1,[30,[36,1],["i18n_3_or_more_participants_not_in_group_conversation","msg-mentions/components/mention-to-invite-toast"],[["name1","name2","othersCount"],[[30,[36,0],[[32,0,["membersToInviteNames"]],"0"],null],[30,[36,0],[[32,0,["membersToInviteNames"]],"1"],null],[32,0,["othersCount"]]]]]],[2,"\\n"]],"parameters":[]}]]],[2,"      "],[13],[2,"\\n      "],[11,"a"],[24,"tabindex","0"],[24,6,"#"],[16,"aria-label",[30,[36,1],["a11y_add_mentioned_members","msg-mentions/components/mention-to-invite-toast"],null]],[24,0,"msg-form__mention-to-invite-toast-link"],[4,[38,6],[[32,0,["addThemInteractionName"]]],null],[4,[38,8],["click",[30,[36,7],[[32,0],"showConfirmModal",true],null]],null],[12],[2,"\\n        "],[1,[30,[36,1],["i18n_add_them","msg-mentions/components/mention-to-invite-toast"],null]],[2,"\\n      "],[13],[2,"\\n    "],[13],[2,"\\n  "]],"parameters":[]}]]],[2,"\\n"]],"parameters":[]}]]],[2,"\\n"],[8,"artdeco-modal@artdeco-confirmation-dialog",[],[["@isOpen","@title","@content","@primaryActionText","@primaryActionTextA11y","@secondaryActionText","@secondaryActionTextA11y","@onPrimary","@onSecondary","@onEscape","@primaryControlName","@size"],[[32,0,["showConfirmModal"]],[30,[36,5],[[30,[36,4],[2,[32,1,["length"]]],null],[30,[36,1],["i18n_add_up_to_2_members_to_this_conversation_prompt","msg-mentions/components/mention-to-invite-toast"],[["names"],[[32,0,["membersToInviteNames"]]]]],[30,[36,1],["i18n_add_3_or_more_members_to_this_conversation_prompt","msg-mentions/components/mention-to-invite-toast"],[["name1","name2","othersCount"],[[30,[36,0],[[32,0,["membersToInviteNames"]],"0"],null],[30,[36,0],[[32,0,["membersToInviteNames"]],"1"],null],[32,0,["othersCount"]]]]]],null],[30,[36,1],["i18n_new_members_will_see_history","msg-mentions/components/mention-to-invite-toast"],null],[30,[36,1],["i18n_yes","msg-mentions/components/mention-to-invite-toast"],null],[30,[36,1],["a11y_confirm_add_mentioned_members","msg-mentions/components/mention-to-invite-toast"],null],[30,[36,1],["i18n_cancel","msg-mentions/components/mention-to-invite-toast"],null],[30,[36,1],["a11y_dismiss_add_mentioned_members","msg-mentions/components/mention-to-invite-toast"],null],[32,0,["addParticipants"]],[32,0,["closeModal"]],[32,0,["closeModal"]],[32,0,["addConfirmationInteractionName"]],"medium"]],null]],"hasEval":false,"upvars":["get","t","did-insert","artdeco-icons-web@li-icon","global-helpers@gte","if","ember-cli-pemberly-tracking@track-interaction","ember-set-helper@set","on"]}',moduleName:"msg-mentions/components/mention-to-invite-toast.hbs"}),{ACTION_TYPES:{ADD:D},CONTROL_NAMES:{ACTIONS:N}}=r.default
+let O=(d=Ember.inject.service("msg-data@data-manager"),p=Ember.inject.service("tracking"),u=Ember.inject.service("persistent-toast-manager@persistent-toast-manager"),f=Ember.inject.service("i18n"),g=Ember.inject.service("global-services@a11y-notification"),b=Ember._tracked,h=Ember._action,_=Ember._action,v=Ember._action,y=Ember._action,k=class extends s.default{constructor(){super(...arguments);(0,n.default)(this,"mentionToInviteToastId",`mention-to-invite-toast-${Ember.guidFor(this)}`);(0,t.default)(this,"msgDataManager",M,this);(0,t.default)(this,"tracking",w,this);(0,t.default)(this,"persistentToastManager",T,this);(0,t.default)(this,"i18n",E,this);(0,t.default)(this,"a11yNotification",P,this);(0,t.default)(this,"showConfirmModal",x,this)}get membersToInviteNames(){var e
+return null===(e=this.args.membersToInvite)||void 0===e?void 0:e.map(a.getName)}get othersCount(){return Ember.get(this.args,"membersToInvite.length")-2}get actionTrackingPrefix(){var e
+return null!==(e=this.args.actionTrackingPrefix)&&void 0!==e?e:""}get addThemInteractionName(){return this.actionTrackingPrefix.concat("at_mention_add_them")}get addConfirmationInteractionName(){return this.actionTrackingPrefix.concat("at_mention_confirmation_add")}onInsert(){if(m.default){const e=document.getElementById(this.mentionToInviteToastId).querySelector(".msg-form__mention-to-invite-toast-card__text")
+if(e){e.focus()
+const t=this.args.membersToInvite.length
+t<=2?this.a11yNotify("i18n_up_to_2_participants_not_in_group_conversation",{names:this.membersToInviteNames,count:t}):this.a11yNotify("i18n_3_or_more_participants_not_in_group_conversation",{name1:this.membersToInviteNames[0],name2:this.membersToInviteNames[1],othersCount:this.othersCount})}}}addToast(){const e=this.i18n.lookupTranslation("components/msg-mentions@mention-to-invite-toast","i18n_num_participants_added")([{count:this.addedParticipantsCount}])
+this.persistentToastManager.success({message:e})}a11yNotify(e,t){const n=this.i18n.lookupTranslation("components/msg-mentions@mention-to-invite-toast",e)
+this.a11yNotification.setTextInLiveRegion(n([t]))}addParticipants(){var e,t
+this.addedParticipantsCount=this.args.membersToInvite.length
+const n=this.msgDataManager.addParticipants(this.args.membersToInvite.mapBy("entityUrn"),Ember.get(this.args.conversation,"entityUrn")),{conversation:o}=this.args
+n.then((()=>{if(!this.isDestroying){l.default.fireDetailActionEvent({actionType:D,controlName:`${this.actionTrackingPrefix}${N.ADD_PARTICIPANTS}`,conversationObjectUrn:Ember.get(o,"backendUrn"),participantUrns:l.default.getParticipantTrackingUrns(Ember.get(o,"participants")),participantPresenceStatuses:(0,c.getParticipantPresenceStatuses)(o),moduleKey:"mention_to_invite",trackingService:this.tracking})
+this.addToast()}this.msgDataManager.fetchConversation(Ember.get(this.args.conversation,"id"),{reload:!0})}))
+this.showConfirmModal=!1
+null===(e=(t=this.args).onToastDismiss)||void 0===e||e.call(t)}closeModal(){var e,t
+this.tracking.fireInteractionEvent(`${this.actionTrackingPrefix}at_mention_confirmation_cancel`)
+this.showConfirmModal=!1
+null===(e=(t=this.args).onToastDismiss)||void 0===e||e.call(t)}closeToast(){var e,t
+this.tracking.fireInteractionEvent(`${this.actionTrackingPrefix}at_mention_x_out`)
+null===(e=(t=this.args).onToastDismiss)||void 0===e||e.call(t)}},M=(0,o.default)(k.prototype,"msgDataManager",[d],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),w=(0,o.default)(k.prototype,"tracking",[p],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),T=(0,o.default)(k.prototype,"persistentToastManager",[u],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),E=(0,o.default)(k.prototype,"i18n",[f],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),P=(0,o.default)(k.prototype,"a11yNotification",[g],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),x=(0,o.default)(k.prototype,"showConfirmModal",[b],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return!1}}),(0,o.default)(k.prototype,"onInsert",[h],Object.getOwnPropertyDescriptor(k.prototype,"onInsert"),k.prototype),(0,o.default)(k.prototype,"addParticipants",[_],Object.getOwnPropertyDescriptor(k.prototype,"addParticipants"),k.prototype),(0,o.default)(k.prototype,"closeModal",[v],Object.getOwnPropertyDescriptor(k.prototype,"closeModal"),k.prototype),(0,o.default)(k.prototype,"closeToast",[y],Object.getOwnPropertyDescriptor(k.prototype,"closeToast"),k.prototype),k)
+e.default=O
+Ember._setComponentTemplate(C,O)}))
+define("msg-mentions/components/mentions-picker-option-presenter",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+const t=Ember.HTMLBars.template({id:"U3f2jo9z",block:'{"symbols":["@selectMention","@selectMentionWithKeyDown","@viewData"],"statements":[[11,"li"],[24,"role","option"],[24,"tabindex","0"],[24,0,"msg-form__mention-option"],[4,[38,0],["click",[32,1]],null],[4,[38,0],["keydown",[32,2]],null],[12],[2,"\\n"],[2,"  "],[8,"presence@entity-with-presence-presenter",[[24,0,"msg-form__mention-entity"]],[["@viewData","@size"],[[32,3,["entityWithPresenceViewData"]],2]],null],[2,"\\n  "],[10,"div"],[14,0,"display-flex flex-column pl2 truncate"],[12],[2,"\\n    "],[10,"span"],[14,0,"t-14 t-black t-bold truncate"],[12],[2,"\\n      "],[1,[32,3,["title"]]],[2,"\\n    "],[13],[2,"\\n    "],[10,"span"],[14,0,"t-12 t-black--light t-normal truncate"],[12],[2,"\\n      "],[1,[32,3,["subtitle"]]],[2,"\\n    "],[13],[2,"\\n  "],[13],[2,"\\n"],[13]],"hasEval":false,"upvars":["on"]}',moduleName:"msg-mentions/components/mentions-picker-option-presenter.hbs"})
+var n=Ember._setComponentTemplate(t,Ember._templateOnlyComponent())
+e.default=n}))
+define("msg-mentions/components/mentions-picker-option",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+const t=Ember.HTMLBars.template({id:"l7Zdrca+",block:'{"symbols":["@selectMention","@selectMentionWithKeyDown","@mentionedMemberMiniProfile"],"statements":[[11,"li"],[24,"role","option"],[24,"tabindex","0"],[24,"data-mentions-picker-option","true"],[24,0,"msg-form__mention-option"],[4,[38,0],["click",[32,1]],null],[4,[38,0],["keydown",[32,2]],null],[12],[2,"\\n  "],[8,"presence@entity-with-presence",[[24,0,"msg-form__mention-entity"]],[["@miniProfile","@size"],[[32,3],2]],null],[2,"\\n  "],[10,"div"],[14,0,"display-flex flex-column pl2 truncate"],[12],[2,"\\n    "],[10,"span"],[14,0,"t-14 t-black t-bold truncate"],[12],[2,"\\n      "],[1,[30,[36,1],null,[["firstName","lastName","type"],[[32,3,["firstName"]],[32,3,["lastName"]],"full"]]]],[2,"\\n    "],[13],[2,"\\n    "],[10,"span"],[14,0,"t-12 t-black--light t-normal truncate"],[12],[2,"\\n      "],[1,[32,3,["occupation"]]],[2,"\\n    "],[13],[2,"\\n  "],[13],[2,"\\n"],[13]],"hasEval":false,"upvars":["on","ember-cli-pemberly-i18n@format-name"]}',moduleName:"msg-mentions/components/mentions-picker-option.hbs"})
+var n=Ember._setComponentTemplate(t,Ember._templateOnlyComponent())
+e.default=n}))
+define("msg-mentions/components/mentions-picker-presenter",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+const t=Ember.HTMLBars.template({id:"nBmj89IJ",block:'{"symbols":["optionViewData","optionViewData","@selectMention","@selectMentionWithKeyDown","@mentionAll","@isTabbingThroughMentions","@mentionsTopPosition","@closeMentions","@onKeyDown","@showMentionAllOption","@viewData"],"statements":[[11,"ul"],[16,0,[31,["msg-form__mentions-picker\\n    ",[30,[36,2],[[32,6],"msg-form__mentions-picker--auto-selected"],null]]]],[24,"role","listbox"],[16,5,[32,7]],[4,[38,3],[[32,8]],null],[4,[38,4],["keydown",[32,9]],null],[12],[2,"\\n"],[6,[37,5],[[32,10]],null,[["default"],[{"statements":[[2,"    "],[8,"msg-mentions@mention-all-picker-option-presenter",[],[["@onClick","@onKeyDown"],[[30,[36,0],[[32,3],[32,5]],null],[30,[36,0],[[32,4],[32,5]],null]]],null],[2,"\\n"]],"parameters":[]}]]],[6,[37,7],[[30,[36,6],[[30,[36,6],[[32,11,["conversationParticipantMentionOptions"]]],null]],null]],null,[["default"],[{"statements":[[2,"    "],[8,"msg-mentions@mentions-picker-option-presenter",[],[["@viewData","@selectMention","@selectMentionWithKeyDown"],[[32,2],[30,[36,0],[[32,3],[32,2,["editorAttribute"]]],null],[30,[36,0],[[32,4],[32,2,["editorAttribute"]]],null]]],null],[2,"\\n"]],"parameters":[2]}]]],[6,[37,5],[[32,11,["connectionMentionOptions","length"]]],null,[["default"],[{"statements":[[2,"    "],[10,"li"],[14,0,"msg-form__mentions-picker-connections-title t-12 t-black--light t-bold ph2 pt2 pb1"],[12],[2,"\\n      "],[1,[30,[36,1],["i18n_connections_header","msg-mentions/components/mentions-picker-presenter"],null]],[2,"\\n    "],[13],[2,"\\n"]],"parameters":[]}]]],[6,[37,7],[[30,[36,6],[[30,[36,6],[[32,11,["connectionMentionOptions"]]],null]],null]],null,[["default"],[{"statements":[[2,"    "],[8,"msg-mentions@mentions-picker-option-presenter",[],[["@viewData","@selectMention","@selectMentionWithKeyDown"],[[32,1],[30,[36,0],[[32,3],[32,1,["editorAttribute"]]],null],[30,[36,0],[[32,4],[32,1,["editorAttribute"]]],null]]],null],[2,"\\n"]],"parameters":[1]}]]],[13]],"hasEval":false,"upvars":["fn","t","unless","global-modifiers@on-click-outside","on","if","-track-array","each"]}',moduleName:"msg-mentions/components/mentions-picker-presenter.hbs"})
+var n=Ember._setComponentTemplate(t,Ember._templateOnlyComponent())
+e.default=n}))
+define("msg-mentions/components/mentions-picker",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+const t=Ember.HTMLBars.template({id:"QmJ+fA7R",block:'{"symbols":["mention","mention","@selectMention","@selectMentionWithKeyDown","@mentionAll","@isTabbingThroughMentions","@mentionsTopPosition","@closeMentions","@onKeyDown","@showMentionAllOption","@conversationMentions","@connectionMentions"],"statements":[[11,"ul"],[16,0,[31,["msg-form__mentions-picker\\n    ",[30,[36,2],[[32,6],"msg-form__mentions-picker--auto-selected"],null]]]],[24,"data-mentions-picker","true"],[24,"role","listbox"],[16,5,[32,7]],[4,[38,3],[[32,8]],null],[4,[38,4],["keydown",[32,9]],null],[12],[2,"\\n"],[6,[37,5],[[32,10]],null,[["default"],[{"statements":[[2,"    "],[8,"msg-mentions@mention-all-picker-option",[],[["@onClick","@onKeyDown"],[[30,[36,0],[[32,3],[32,5]],null],[30,[36,0],[[32,4],[32,5]],null]]],null],[2,"\\n"]],"parameters":[]}]]],[6,[37,7],[[30,[36,6],[[30,[36,6],[[32,11]],null]],null]],null,[["default"],[{"statements":[[2,"    "],[8,"msg-mentions@mentions-picker-option",[],[["@mentionedMemberMiniProfile","@selectMention","@selectMentionWithKeyDown"],[[32,2,["mentionedMemberMiniProfile"]],[30,[36,0],[[32,3],[32,2,["editorAttribute"]]],null],[30,[36,0],[[32,4],[32,2,["editorAttribute"]]],null]]],null],[2,"\\n"]],"parameters":[2]}]]],[6,[37,5],[[32,12,["length"]]],null,[["default"],[{"statements":[[2,"    "],[10,"li"],[14,0,"msg-form__mentions-picker-connections-title t-12 t-black--light t-bold ph2 pt2 pb1"],[12],[2,"\\n      "],[1,[30,[36,1],["i18n_connections_header","msg-mentions/components/mentions-picker"],null]],[2,"\\n    "],[13],[2,"\\n"]],"parameters":[]}]]],[6,[37,7],[[30,[36,6],[[30,[36,6],[[32,12]],null]],null]],null,[["default"],[{"statements":[[2,"    "],[8,"msg-mentions@mentions-picker-option",[],[["@mentionedMemberMiniProfile","@selectMention","@selectMentionWithKeyDown"],[[32,1,["mentionedMemberMiniProfile"]],[30,[36,0],[[32,3],[32,1,["editorAttribute"]]],null],[30,[36,0],[[32,4],[32,1,["editorAttribute"]]],null]]],null],[2,"\\n"]],"parameters":[1]}]]],[13]],"hasEval":false,"upvars":["fn","t","unless","global-modifiers@on-click-outside","on","if","-track-array","each"]}',moduleName:"msg-mentions/components/mentions-picker.hbs"})
+var n=Ember._setComponentTemplate(t,Ember._templateOnlyComponent())
+e.default=n}))
+define("msg-mentions/config/environment",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+let t
+try{const e="msg-mentions/config/environment",n=document.querySelector('meta[name="'+e+'"]').getAttribute("content")
+t=JSON.parse(unescape(n))}catch(e){t={}}var n=t
+e.default=n}))
+define.alias("ember-element-helper/helpers/-element","msg-mentions/helpers/-element")
+define.alias("ember-named-blocks-polyfill/helpers/-has-block-params","msg-mentions/helpers/-has-block-params")
+define.alias("ember-named-blocks-polyfill/helpers/-has-block","msg-mentions/helpers/-has-block")
+define.alias("ember-named-blocks-polyfill/helpers/-is-named-block-invocation","msg-mentions/helpers/-is-named-block-invocation")
+define.alias("ember-named-blocks-polyfill/helpers/-named-block-invocation","msg-mentions/helpers/-named-block-invocation")
+define.alias("ember-element-helper/helpers/element","msg-mentions/helpers/element")
+define.alias("ember-cli-pemberly-i18n/helpers/format-number","msg-mentions/helpers/format-number")
+define.alias("artdeco-icons-web/helpers/li-icon","msg-mentions/helpers/li-icon")
+define.alias("ember-app-scheduler/helpers/route-idle","msg-mentions/helpers/route-idle")
+define.alias("ember-set-helper/helpers/set","msg-mentions/helpers/set")
+define.alias("ember-cli-pemberly-i18n/helpers/t","msg-mentions/helpers/t")
+define("msg-mentions/initializers/artdeco",["exports","artdeco-eyeglass"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+e.initialize=i
+const n=[t.default.contextClasses,t.default.floatingLabel,t.default.focusOutline]
+function o(e,t){const o=e[t]
+e[t]=function(){n.forEach((e=>e&&"function"==typeof e.teardown&&e.teardown()))
+o&&"function"==typeof o&&o.call(e)}}function i(e){if("undefined"!=typeof document){n.forEach((e=>e.install()))
+"function"==typeof e.willDestroy?o(e,"willDestroy"):"function"==typeof e.destroy&&o(e,"destroy")}}var s={name:"artdeco",initialize:i}
+e.default=s}))
+define("msg-mentions/initializers/icons",["exports","artdeco-icons-web/src/icons","msg-mentions/config/environment"],(function(e,t,n){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+function o(e){throw e}var i={name:"icons",initialize:function(){const{environment:e,APP:i}=n.default
+let s,a
+i&&({artdecoCustomSpriteUrl:s,artdecoCustomSpriteName:a}=i)
+const r="test"!==e
+t.default.load(r,s,a).catch(o)}}
+e.default=i}))
+define.alias("ember-m3/initializers/m3-store","msg-mentions/initializers/m3-store")
+define("msg-mentions/initializers/override-safestring",["exports"],(function(e){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+e.initialize=i
+const t="ember-glimmer",n="ember-htmlbars/utils/string",o="@ember/-internals/glimmer"
+function i(){let e,i=Ember.__loader.require.has
+if(i(o))e=Ember.__loader.require(o).SafeString
+else if(i(t))e=Ember.__loader.require(t).SafeString
+else{if(!i(n))throw new Error("Cannot locate SafeString class for overriding")
+e=Ember.__loader.require(n).SafeString}e.prototype.toHTML=function(){return jSecure.sanitizeHTML(this.toString())}
+e.prototype.toString=function(){return`${this.string}`}}var s={name:"override-safestring",initialize:i}
+e.default=s}))
+define.alias("@ember/render-modifiers/modifiers/did-insert","msg-mentions/modifiers/did-insert")
+define.alias("@ember/render-modifiers/modifiers/did-update","msg-mentions/modifiers/did-update")
+define.alias("@ember/render-modifiers/modifiers/will-destroy","msg-mentions/modifiers/will-destroy")
+define.alias("artdeco-modal/services/artdeco-modal","msg-mentions/services/artdeco-modal")
+define.alias("client-sensor-web/services/client-sensor","msg-mentions/services/client-sensor")
+define.alias("@linkedin/ember-pem/services/internal-event-utils","msg-mentions/services/internal-event-utils")
+define.alias("@linkedin/ember-pem/services/internal-pem-tracking","msg-mentions/services/internal-pem-tracking")
+define.alias("ember-m3/services/m3-schema-manager","msg-mentions/services/m3-schema-manager")
+define.alias("@linkedin/ember-pem/services/pem-tracking","msg-mentions/services/pem-tracking")
+define.alias("ember-cli-pemberly-m3/services/store","msg-mentions/services/store")
+define.alias("client-sensor-web/utils/helpers","msg-mentions/utils/helpers")
+define("msg-mentions/viewdata/mentions-picker-option-viewdata",["exports","global-helpers/helpers/name","presence/viewdata/entity-with-presence-viewdata"],(function(e,t,n){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+e.default=class{constructor(e,t){this.formatter=e.lookup("service:formatter")
+this.args=t
+this.owner=e}get title(){return this.formatter.formatName((0,t.getName)(this.args.profile),"full")}get subtitle(){return Ember.get(this.args.profile,"occupation")}get entityWithPresenceViewData(){const{profile:e}=this.args
+return new n.default(this.owner,{profile:e,formatter:this.formatter})}get editorAttribute(){return this.args.editorAttribute}}}))
+define("msg-mentions/viewdata/mentions-picker-viewdata",["exports","msg-mentions/viewdata/mentions-picker-option-viewdata"],(function(e,t){"use strict"
+Object.defineProperty(e,"__esModule",{value:!0})
+e.default=void 0
+e.default=class{constructor(e,t){this.args=t
+this.owner=e}get conversationParticipantMentionOptions(){return this.args.conversationParticipantMentions.map((e=>new t.default(this.owner,{profile:e.mentionedMemberMiniProfile,editorAttribute:e.editorAttribute})))}get connectionMentionOptions(){return this.args.connectionMentions.map((e=>new t.default(this.owner,{profile:e.mentionedMemberMiniProfile,editorAttribute:e.editorAttribute})))}}}))
+
+//# sourceMappingURL=engine.map
